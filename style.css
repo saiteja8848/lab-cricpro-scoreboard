@@ -1,16 +1,170 @@
 /* Type your code here */
 
+body{
+	background-image: url("./assets/background-image1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding:0;
+	margin:0;
+}
+
+#logo-image{
+	float: right;
+	margin:20px 35px;
+	width:160px;
+}
+
+#two{
+	clear: both;
+	margin:0;
+}
+
+
+#heading1{
+	font-family:Georgia, serif;
+	font-size: 3em;
+}
+
+#heading2{
+	font-family:Georgia, serif;
+	font-size: 1.2em;
+	margin-top:-50px;
+	color:grey;
+} 
+
+.all{
+    position: absolute;
+    top:10px;
+    left:40px;
+}
+
+
+
+.white{
+	background: white;
+	color:black;
+}
+
+.names{
+	color:skyblue;
+	cursor: pointer;
+}
+
+
+.wrapper {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: auto;
+}
+
+.headers {
+grid-column-start: 1;
+grid-column-end: 4;
+grid-row: 1;
+padding: 3px;
+background: rgba(255,0,0,0.8);
+color:white;
+}
+
+.headers>* {
+display: inline-block;
+vertical-align: middle;
+margin:15px;
+}
+
+        .playerDetails {
+            grid-row: 2;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(auto-fit, 0.2fr);
+        
+        }
+
+        .extra {
+            grid-row: 3;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(auto-fit, 0.2fr);
+        }
+
+        .extra>* {
+            padding: 3px;
+        }
+
+        .total {
+            grid-row: 4;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(auto-fit, 0.2fr);
+        }
+
+        .total>* {
+            padding: 3px;
+        }
+
+        .didNotBat {
+            grid-row: 5;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(auto-fit, 0.2fr);
+        }
+
+        .didNotBat>* {
+            padding: 3px;
+        }
+
+        .notBatData {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        .scoreDetails {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        .playerNames,
+        .info,
+        .fours,
+        .sixes,
+        .runs,
+        .balls,
+        .SR {
+            display: grid;
+            padding: 3px;
+            grid-template-columns: repeat(auto-fit, 1fr);
+        
+        }
+
+        .playerScore>* {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .player>* {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        #fright {
+            float: right;
+        }
+
+        .container {
+            width: 800px;
+        }
+    
 
 /* change the font family and spacing as per your project font */
 .footer{
-    display:flex;
-    flex-direction: row;
-    align-content: flex-end;
-	position: relative;
-	top: 750px;
-	margin-left: 80px;
-	font-size: 18px;
-	font-family: Nunito Sans;
-    font-style: normal;
-    
+   clear:both;
+   padding-top:15px;
 }
